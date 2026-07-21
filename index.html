@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vive Libre - Prevención de Alcohol y Tabaco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Volver arriba">↑</button>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">
+                <img src="logo.jpeg" alt="Logo ViveLibre" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#jovenes">Jóvenes</a></li>
+                <li><a href="#padres">Padres</a></li>
+                <li><a href="#ayuda">Ayuda</a></li>
+                <li><a href="#herramientas" class="btn-nav">Herramientas</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <span class="hero-badge" id="heroBadge">🌱 Prevención con conciencia</span>
+            <h1>Tu vida, tu <span class="highlight">decisión</span>, tu futuro</h1>
+            <p>Información clara, herramientas útiles y apoyo real para prevenir el consumo de alcohol y tabaco. Porque elegir una vida libre es el mejor regalo que puedes darte.</p>
+            <div class="hero-buttons">
+                <a href="#educacion" class="btn btn-primary ripple">Aprender más</a>
+                <a href="#herramientas" class="btn btn-outline ripple"> Herramientas interactivas</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section stats-section" id="estadisticas">
+        <div class="section-header">
+            <span class="section-icon">📊</span>
+            <h2>El impacto en números</h2>
+            <p class="subtitle">Datos de la Organización Mundial de la Salud que nos invitan a reflexionar.</p>
+            <div class="divider"></div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-suffix">millones</span>
+                <p>Muertes anuales por alcohol en el mundo</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="8">0</span>
+                <span class="stat-suffix">millones</span>
+                <p>Muertes anuales por tabaco (OMS)</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="70">0</span>
+                <span class="stat-suffix">%</span>
+                <p>De fumadores quiere dejarlo</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="40">0</span>
+                <span class="stat-suffix">%</span>
+                <p>De jóvenes ha probado alcohol antes de los 15</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="educacion">
+        <div class="section-header">
+            <span class="section-icon">📖</span>
+            <h2>Educación sin Estigmas</h2>
+            <p class="subtitle">Conoce los efectos reales del alcohol y el tabaco con información científica, sin alarmismos ni juicios.</p>
+            <div class="divider"></div>
+        </div>
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="tab-alcohol">🍺 Alcohol</button>
+                <button class="tab-btn" data-tab="tab-tabaco">🚬 Tabaco</button>
+                <button class="tab-btn" data-tab="tab-ambas">⚖️ Comparativa</button>
+            </div>
+            <div class="tab-content active" id="tab-alcohol">
+                <h3>Efectos del Alcohol en el Cuerpo</h3>
+                <p style="color:#5a7a65;margin-bottom:1rem;">El alcohol es un depresor del sistema nervioso central. Su consumo excesivo o frecuente puede causar daños significativos a corto y largo plazo.</p>
+                <div class="info-cards-mini">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">🧠 Cerebro</div>
+                            <div class="flip-card-back">Afecta memoria, juicio y coordinación. Puede reducir el tamaño cerebral.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">🫁 Hígado</div>
+                            <div class="flip-card-back">Provoca hígado graso, hepatitis alcohólica y cirrosis.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">❤️ Corazón</div>
+                            <div class="flip-card-back">Aumenta la presión arterial y riesgo de miocardiopatía.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">🧘 Salud mental</div>
+                            <div class="flip-card-back">Ansiedad, depresión y trastornos del sueño.</div>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top:1rem;font-size:0.85rem;color:#888;">Fuente: Instituto Nacional sobre el Abuso de Drogas (NIH/NIDA) y OMS.</p>
+            </div>
+            <div class="tab-content" id="tab-tabaco">
+                <h3>Efectos del Tabaco en el Cuerpo</h3>
+                <p style="color:#5a7a65;margin-bottom:1rem;">El tabaco contiene nicotina, altamente adictiva, y más de 70 compuestos cancerígenos.</p>
+                <div class="info-cards-mini">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">🫁 Pulmones</div>
+                            <div class="flip-card-back">Cáncer, EPOC, bronquitis crónica y enfisema.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">👄 Boca/Garganta</div>
+                            <div class="flip-card-back">Cáncer oral, enfermedad de encías y pérdida dental.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">❤️ Corazón</div>
+                            <div class="flip-card-back">Infartos, arterioesclerosis y enfermedad coronaria.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">👶 Fertilidad</div>
+                            <div class="flip-card-back">Reduce fertilidad y aumenta complicaciones en embarazo.</div>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top:1rem;font-size:0.85rem;color:#888;">Fuente: NIH, CDC y Sociedad Americana del Cáncer.</p>
+            </div>
+            <div class="tab-content" id="tab-ambas">
+                <h3>Comparativa: Alcohol vs Tabaco</h3>
+                <div class="cards-grid" style="margin-top:1rem;">
+                    <div class="card" style="border-left:4px solid #e74c3c;">
+                        <div class="card-icon red">🍺</div>
+                        <h3>Alcohol</h3>
+                        <p>Depresor del SNC. Daña principalmente hígado, cerebro y corazón. El consumo excesivo puede ser letal en una sola ocasión.</p>
+                    </div>
+                    <div class="card" style="border-left:4px solid #95a5a6;">
+                        <div class="card-icon orange">🚬</div>
+                        <h3>Tabaco</h3>
+                        <p>Estimulante adictivo. Principal causa de cáncer prevenible. El daño es acumulativo e irreversible. Afecta a fumadores pasivos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="jovenes" style="background:#f0faf3;max-width:100%;padding-left:0;padding-right:0;">
+        <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+            <div class="section-header">
+                <span class="section-icon">🧑‍🤝‍🧑</span>
+                <h2>Sección para Jóvenes</h2>
+                <p class="subtitle">Presión social, alternativas de ocio y cómo decir "NO" sin miedo. Tú tienes el control.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="cards-grid">
+                <div class="card interactive-card">
+                    <div class="card-icon blue">💪</div>
+                    <h3>Cómo decir "NO"</h3>
+                    <p>Practica frases como: <em>"No, gracias, estoy bien así"</em>, <em>"Tengo que estar fresco mañana"</em> o <em>"No va conmigo"</em>.</p>
+                    <div class="card-hover-detail">Sé firme y cambia de tema con seguridad. Tu decisión merece respeto.</div>
+                </div>
+                <div class="card interactive-card">
+                    <div class="card-icon green">🎯</div>
+                    <h3>Alternativas de Ocio</h3>
+                    <p>Deporte, música, arte, voluntariado, clubes de lectura, senderismo, baile, videojuegos cooperativos...</p>
+                    <div class="card-hover-detail">¡Hay un mundo de opciones saludables esperándote!</div>
+                </div>
+                <div class="card interactive-card">
+                    <div class="card-icon orange">🗣️</div>
+                    <h3>Testimonios Reales</h3>
+                    <p>Jóvenes como tú comparten sus experiencias enfrentando la presión social.</p>
+                    <div class="card-hover-detail">Descubre cómo eligieron un camino libre y pleno.</div>
+                </div>
+            </div>
+            <h3 style="margin-top:2.5rem;color:#1a3c2a;">💬 Historias que inspiran</h3>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <p class="quote">"Al principio mis amigos insistían mucho, pero cuando vieron que yo era firme, empezaron a respetarme. Ahora hasta me preguntan cómo le hago para divertirme sin tomar."</p>
+                    <p class="author">— Andrea, 19 años</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"Dejé el tabaco porque empecé a notar que me cansaba al jugar fútbol. Fue difícil, pero mi rendimiento mejoró muchísimo y me siento más vivo que nunca."</p>
+                    <p class="author">— Miguel, 21 años</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"Pensé que el alcohol me ayudaba con la ansiedad, pero solo la empeoraba. Aprendí a manejar mis emociones con terapia y ejercicio."</p>
+                    <p class="author">— Lucía, 23 años</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="padres">
+        <div class="section-header">
+            <span class="section-icon"></span>
+            <h2>Guía para Padres</h2>
+            <p class="subtitle">Recursos prácticos para mejorar la comunicación familiar, detectar señales de alerta y saber cómo actuar.</p>
+            <div class="divider"></div>
+        </div>
+        <div class="cards-grid">
+            <div class="card"><div class="card-icon blue">💬</div><h3>Comunicación Efectiva</h3><p>Habla sin juzgar. Escucha activamente, muestra empatía y crea un espacio seguro.</p></div>
+            <div class="card"><div class="card-icon orange">🔍</div><h3>Señales de Alerta</h3><p>Cambios de humor, descuido personal, bajo rendimiento escolar, aislamiento, olor a tabaco/alcohol.</p></div>
+            <div class="card"><div class="card-icon green">🆘</div><h3>¿Qué hacer si descubres consumo?</h3><p>Mantén la calma. Evita castigos extremos. Busca apoyo profesional en centro de salud o psicólogo.</p></div>
+    </section>
+
+    <section class="section" id="ayuda" style="background:#fff;max-width:100%;">
+        <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+            <div class="section-header">
+                <span class="section-icon">📞</span>
+                <h2>Directorio de Ayuda</h2>
+                <p class="subtitle">Líneas de emergencia, centros de rehabilitación y apoyo psicológico. No estás solo.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="cards-grid">
+                <div class="card" style="border-top:4px solid #e74c3c;"><h3>🚨 Emergencias</h3><p><strong>911</strong> (El Salavador) / <strong>112</strong> (Europa) / <strong>911</strong> (EE.UU.)</p><p>Cruz Roja 24h.</p></div>
+                <div class="card" style="border-top:4px solid #3498db;"><h3>📞 Apoyo Psicológico</h3><p><strong>Línea de la Vida (MX):</strong> 800 911 2000</p><p><strong>Teléfono Esperanza:</strong> 717 003 717</p></div>
+                <div class="card" style="border-top:4px solid #27ae60;"><h3>🏥 Centros de Rehabilitación</h3><p>Consulta directorios de la Secretaría de Salud o servicios sociales municipales.</p><p><strong>CONADIC:</strong> conadic.salud.gob.mx</p></div>
+                <div class="card" style="border-top:4px solid #f39c12;"><h3>🌐 Recursos Online</h3><p><strong>NIH-NIDA:</strong> nida.nih.gov/es</p><p><strong>OMS Alcohol:</strong> who.int/es</p><p><strong>CDC Tabaco:</strong> cdc.gov/tobacco</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="herramientas">
+        <div class="section-header">
+            <span class="section-icon">🛠️</span>
+            <h2>Herramientas Interactivas</h2>
+            <p class="subtitle">Explora, calcula y reflexiona con nuestras herramientas dinámicas.</p>
+            <div class="divider"></div>
+        </div>
+
+        <div class="calculator-box" style="margin-bottom:2.5rem;">
+            <h3>💰 Calculadora de Ahorro</h3>
+            <p style="text-align:center;color:#5a7a65;margin-bottom:1.5rem;">Descubre cuánto dinero y tiempo ahorras al elegir actividades sin alcohol ni tabaco.</p>
+            <div class="calc-row">
+                <div><label for="gastoAlcohol">Gasto semanal en alcohol ($)</label><input type="number" id="gastoAlcohol" placeholder="Ej: 200" min="0" value="150"></div>
+                <div><label for="gastoTabaco">Gasto semanal en tabaco ($)</label><input type="number" id="gastoTabaco" placeholder="Ej: 100" min="0" value="80"></div>
+                <div><label for="horasConsumo">Horas semanales dedicadas al consumo</label><input type="number" id="horasConsumo" placeholder="Ej: 5" min="0" value="4"></div>
+            </div>
+            <button class="btn-calc ripple" onclick="calcularAhorro()">📊 Calcular ahorro anual</button>
+            <div class="calc-result" id="resultadoAhorro">Resultado aparecerá aquí...</div>
+            <div class="bar-chart" id="barChart" style="display:none; margin-top:1.5rem;">
+                <div class="bar"><span class="bar-label">Dinero ahorrado/año</span><div class="bar-fill" id="barDinero"></div></div>
+                <div class="bar"><span class="bar-label">Tiempo recuperado (días)</span><div class="bar-fill" id="barTiempo"></div></div>
+            </div>
+        </div>
+
+        <div class="body-simulator" style="margin-bottom:2.5rem;">
+            <div class="body-figure">
+                <svg class="body-svg" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="100" cy="50" rx="35" ry="40" fill="#f5e6d3" stroke="#ccc" stroke-width="2"/>
+                    <rect x="75" y="90" width="50" height="100" rx="25" fill="#f5e6d3" stroke="#ccc" stroke-width="2"/>
+                    <line x1="75" y1="120" x2="30" y2="180" stroke="#f5e6d3" stroke-width="20" stroke-linecap="round"/>
+                    <line x1="125" y1="120" x2="170" y2="180" stroke="#f5e6d3" stroke-width="20" stroke-linecap="round"/>
+                    <line x1="85" y1="185" x2="70" y2="280" stroke="#f5e6d3" stroke-width="22" stroke-linecap="round"/>
+                    <line x1="115" y1="185" x2="130" y2="280" stroke="#f5e6d3" stroke-width="22" stroke-linecap="round"/>
+                    <ellipse cx="100" cy="50" rx="35" ry="40" fill="none" stroke="#bbb" stroke-width="2.5"/>
+                    <rect x="75" y="90" width="50" height="100" rx="25" fill="none" stroke="#bbb" stroke-width="2.5"/>
+                </svg>
+                <div class="organ-dot brain" data-organ="brain" title="Cerebro"></div>
+                <div class="organ-dot lungs" data-organ="lungs" title="Pulmones"></div>
+                <div class="organ-dot heart" data-organ="heart" title="Corazón"></div>
+                <div class="organ-dot liver" data-organ="liver" title="Hígado"></div>
+            </div>
+            <div class="organ-info">
+                <h3> Simulador de Impacto en el Cuerpo</h3>
+                <p style="color:#5a7a65;">Haz clic en los puntos rojos para ver cómo afectan el alcohol y el tabaco a cada órgano.</p>
+                <div class="organ-detail" id="detail-brain"><strong>🧠 Cerebro:</strong> El alcohol reduce la materia gris y afecta la memoria. El tabaco disminuye el flujo sanguíneo cerebral, aumentando riesgo de demencia y ACV.</div>
+                <div class="organ-detail" id="detail-lungs"><strong>🫁 Pulmones:</strong> El tabaco causa cáncer de pulmón y EPOC. El alcohol debilita el sistema inmunológico pulmonar.</div>
+                <div class="organ-detail" id="detail-heart"><strong>❤️ Corazón:</strong> El alcohol puede causar miocardiopatía e hipertensión. El tabaco endurece arterias y multiplica el riesgo de infarto.</div>
+                <div class="organ-detail" id="detail-liver"><strong>🟤 Hígado:</strong> Alcohol: hígado graso, hepatitis, cirrosis. Tabaco: agrava el daño hepático y aumenta riesgo de cáncer hepático.</div>
+            </div>
+        </div>
+
+        <div class="quiz-box">
+            <h3>📝 Test de Autoevaluación</h3>
+            <p style="text-align:center;color:#5a7a65;margin-bottom:1.5rem;">Responde honestamente. Tus respuestas son anónimas.</p>
+            <div id="quizContainer">
+                <div class="progress-bar"><div class="progress-fill" id="quizProgress"></div></div>
+                <div class="quiz-question"><p>1. ¿Con qué frecuencia consumes bebidas alcohólicas?</p><div class="quiz-options"><label><input type="radio" name="q1" value="0"> Nunca</label><label><input type="radio" name="q1" value="1"> Ocasionalmente</label><label><input type="radio" name="q1" value="2"> Frecuentemente</label><label><input type="radio" name="q1" value="3"> A diario</label></div></div>
+                <div class="quiz-question"><p>2. ¿Has fumado tabaco en los últimos 30 días?</p><div class="quiz-options"><label><input type="radio" name="q2" value="0"> Nunca he fumado</label><label><input type="radio" name="q2" value="1"> Ocasionalmente</label><label><input type="radio" name="q2" value="2"> Varias veces/semana</label><label><input type="radio" name="q2" value="3"> A diario</label></div></div>
+                <div class="quiz-question"><p>3. ¿Sientes presión de amigos para consumir?</p><div class="quiz-options"><label><input type="radio" name="q3" value="0"> No</label><label><input type="radio" name="q3" value="1"> A veces</label><label><input type="radio" name="q3" value="2"> Con frecuencia</label><label><input type="radio" name="q3" value="3"> Constantemente</label></div></div>
+                <div class="quiz-question"><p>4. ¿Has intentado dejar de consumir sin éxito?</p><div class="quiz-options"><label><input type="radio" name="q4" value="0"> No consumo</label><label><input type="radio" name="q4" value="1"> No lo he intentado</label><label><input type="radio" name="q4" value="2"> Fue difícil</label><label><input type="radio" name="q4" value="3"> No pude</label></div></div>
+                <button class="btn-calc ripple" onclick="evaluarTest()">🔍 Ver resultado</button>
+                <div class="quiz-result" id="quizResultado"></div>
+            </div>
+        </div>
+
+
+        <div class="faq-container" style="margin-top:3rem;">
+            <h3 style="text-align:center;color:#1a3c2a;margin-bottom:1.5rem;">❓ Preguntas Frecuentes</h3>
+            <div class="faq-item"><div class="faq-question">¿El alcohol en pequeñas cantidades es seguro? <span class="arrow">▼</span></div>
+            <div class="faq-answer">No. La OMS afirma que no existe un nivel de consumo completamente seguro. Incluso una copa al día aumenta el riesgo de varios tipos de cáncer (mama, boca, esófago). El alcohol es un carcinógeno del Grupo 1, igual que el tabaco. Afecta el sistema nervioso central desde la primera gota, alterando el juicio y los reflejos. Además, el consumo social puede derivar en atracones de fin de semana, muy dañinos para el corazón y el cerebro. Cuanto menos alcohol, mejor para tu salud.</div></div>
+            
+            <div class="faq-item"><div class="faq-question">¿Fumar de forma social también es dañino? <span class="arrow">▼</span></div>
+            <div class="faq-answer">Sí, totalmente. Cada cigarro contiene más de 70 sustancias cancerígenas y daña el ADN celular. La nicotina es extremadamente adictiva, incluso con consumos esporádicos. Un estudio mostró que fumar de 1 a 4 cigarros al día triplica el riesgo de infarto y cáncer de pulmón. No existe un umbral seguro. Además, el humo afecta a quienes te rodean (fumadores pasivos). Fumar "solo en fiestas" sigue siendo una conducta de alto riesgo.</div></div>
+
+
+            <div class="faq-item"><div class="faq-question">¿Cómo ayudo a un amigo que consume en exceso? <span class="arrow">▼</span></div>
+            <div class="faq-answer">Habla con él en privado y con empatía, sin juzgar. Usa frases como "Me preocupas" en lugar de regañar. Infórmate sobre adicciones para entender que es una enfermedad, no falta de voluntad. Ofrece acompañarlo a buscar ayuda profesional si está listo. Si se resiste, no insistas; deja la puerta abierta para cuando quiera hablar. Recuerda cuidar también tu propio bienestar y buscar apoyo si lo necesitas</div></div>
+
+
+            <div class="faq-item"><div class="faq-question">¿Dónde encuentro ayuda gratuita? <span class="arrow">▼</span></div>
+            <div class="faq-answer">En la sección de <a href="#ayuda">Directorio de Ayuda</a> tienes números de emergencia y enlaces a centros gratuitos.</div></div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div><h3>🌿 ViveLibre</h3><p>Prevención con conciencia. Información basada en evidencia científica.</p></div>
+            <div><h3>Enlaces rápidos</h3><a href="#inicio">Inicio</a><a href="#educacion">Educación</a><a href="#jovenes">Jóvenes</a><a href="#padres">Padres</a><a href="#ayuda">Ayuda</a></div>
+            <div><h3>Recursos</h3><a href="https://nida.nih.gov/es" target="_blank">NIH - NIDA</a><a href="https://www.who.int/es" target="_blank">OMS</a><a href="https://www.cdc.gov/tobacco" target="_blank">CDC - Tabaco</a></div>
+            <div><h3>Contacto</h3><p>📧 info@vivelibre.org</p><p>📞 800 911 2000</p></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 ViveLibre. Fines informativos y educativos. Ante emergencias, contacta servicios locales.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
