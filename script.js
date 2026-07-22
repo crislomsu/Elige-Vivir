@@ -1,4 +1,3 @@
-// ==================== NAVEGACIÓN ====================
 const navbar = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
@@ -8,10 +7,8 @@ const scrollTopBtn = document.getElementById('scrollTopBtn');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) navbar.classList.add('scrolled');
     else navbar.classList.remove('scrolled');
-    // Mostrar/ocultar botón volver arriba
     if (window.scrollY > 600) scrollTopBtn.classList.add('visible');
     else scrollTopBtn.classList.remove('visible');
-    // Active link
     const sections = document.querySelectorAll('section[id]');
     const scrollPos = window.scrollY + 150;
     sections.forEach(section => {
@@ -39,7 +36,6 @@ document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener(
     document.body.style.overflow = '';
 }));
 
-// ==================== HERO PARTICLES ====================
 const particlesContainer = document.getElementById('heroParticles');
 for (let i=0; i<25; i++) {
     const particle = document.createElement('div');
@@ -51,7 +47,6 @@ for (let i=0; i<25; i++) {
     particlesContainer.appendChild(particle);
 }
 
-// ==================== ESTADÍSTICAS CONTADOR ====================
 const statsSection = document.getElementById('estadisticas');
 const statNumbers = document.querySelectorAll('.stat-number');
 let animated = false;
@@ -74,7 +69,6 @@ function animateStats() {
 }
 window.addEventListener('scroll', animateStats);
 
-// ==================== TABS ====================
 document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const target = btn.getAttribute('data-tab');
@@ -85,7 +79,6 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     });
 });
 
-// ==================== SIMULADOR CUERPO ====================
 document.querySelectorAll('.organ-dot').forEach(dot => {
     dot.addEventListener('click', () => {
         const organ = dot.getAttribute('data-organ');
@@ -98,7 +91,6 @@ document.querySelectorAll('.organ-dot').forEach(dot => {
     });
 });
 
-// ==================== CALCULADORA DE AHORRO ====================
 function calcularAhorro() {
     const gastoAlcohol = parseFloat(document.getElementById('gastoAlcohol').value)||0;
     const gastoTabaco = parseFloat(document.getElementById('gastoTabaco').value)||0;
@@ -117,7 +109,6 @@ function calcularAhorro() {
     document.getElementById('barTiempo').style.width = Math.min(100, (diasAhorrados/365)*100)+'%';
 }
 
-// ==================== TEST AUTOEVALUACIÓN ====================
 function evaluarTest() {
     const q1 = document.querySelector('input[name="q1"]:checked');
     const q2 = document.querySelector('input[name="q2"]:checked');
@@ -133,7 +124,6 @@ function evaluarTest() {
     resultadoDiv.style.display='block';
     resultadoDiv.scrollIntoView({behavior:'smooth',block:'center'});
 }
-// Actualizar barra de progreso
 document.querySelectorAll('input[type="radio"]').forEach(radio => {
     radio.addEventListener('change', () => {
         const totalPreguntas = 4;
@@ -141,8 +131,6 @@ document.querySelectorAll('input[type="radio"]').forEach(radio => {
         document.getElementById('quizProgress').style.width = (respondidas/totalPreguntas)*100+'%';
     });
 });
-
-// ==================== FAQ ====================
 document.querySelectorAll('.faq-question').forEach(q => {
     q.addEventListener('click', () => {
         const item = q.parentElement;
@@ -152,7 +140,7 @@ document.querySelectorAll('.faq-question').forEach(q => {
     });
 });
 
-// ==================== ANIMACIONES SCROLL ====================
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
